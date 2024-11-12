@@ -1,17 +1,27 @@
-jumlah_siswa = int(input("masukan jumlah siswa : "))
+#input nama karyawan
+nama = str(input("nama karyawan : "))
 
-total_nilai = 0
-for x in  range(1,jumlah_siswa+1):
-    nilai = int(input(f'masukan nilai siswa {x} : '))
-    nilai = int(input(f'masukan nilai siswa {x} : '))
-    total_nilai+=nilai
-    
+
+#input jam kerja per hari
+jam = int(input("jumlah jam kerja : "))
+
+
+#input tarif perjam
+tarif = float(input("tarif per jam : "))
+
+
+
+#hitung jam kerja perbulan
+jam_kerja_perbulan = jam*20
+
+#hitung gaji perbulan 
+gaji = tarif*jam_kerja_perbulan 
+
+
+#end
 print()
-print(f'jumlah nilai siswa : {total_nilai}')
-print()
-print(f'rata - rata nilai siswa : {total_nilai/jumlah_siswa}')
-
-    
-
-    
-    
+print (f'\nnama karyawan : {nama}')
+print (f'jam kerja : {jam}')
+print (f'tarif perjam : {tarif}')
+print(f'jumlah jam kerja perbulan : {jam_kerja_perbulan}')
+print(f'gaji sebulan : {gaji:,.2f}')
